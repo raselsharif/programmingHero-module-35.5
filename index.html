@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping cart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section class="container mx-auto my-4">
+        <input id="product-name" class="border border-gray-800 p-2" type="text" placeholder="Product Name">
+        <input id="product-quantity" class="border border-gray-800 p-2" type="text" placeholder="Product Quantity">
+        <button onclick="addProduct()" class="border py-2 px-4 bg-red-400 text-white ">Add Product</button>
+    </section>
+
+    <section class="container mx-auto">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody id="product-container">
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
